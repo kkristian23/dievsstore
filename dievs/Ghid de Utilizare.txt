@@ -1,0 +1,6 @@
+1. Creezi un file .txt cu denumirea "links" in Pathul acesta: "D:\dievs_code\". Pentru a introduce linkurile noi in acest file. ["links.txt"]
+2. Creezi un folder nou cu denumirea "new_photos" in Pathul acesta: "D:\dievs_code\". Pentru a se salva pozele noi in el.
+3. Dupa cei 2 pasi, pune o serie de linkuri a UNUI magazin in "links.txt". Apoi ruleaza codul.
+--------------------------
+NOTA: Mereu pune linkurile unui magazin, nu amesteca linkurile din diferite magazine! Fiecare magazin are codul sau separat pentru a lucra corespunzator.
+--------------------------

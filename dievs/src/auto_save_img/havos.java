@@ -20,7 +20,7 @@ public class havos extends links {
 
     public static void main(String[] args) throws IOException, InterruptedException {
         int x = 1;
-        String file_descriere = "D:\\" + "link" + ".txt";
+        String file_descriere = "D:\\dievs_code\\" + "link" + ".txt";
         File descriere = new File(file_descriere);
         driver = new ChromeDriver();
         Actions actions = new Actions(driver);
@@ -28,7 +28,7 @@ public class havos extends links {
             Scanner myReader = new Scanner(descriere);
             while (myReader.hasNextLine()) {
                 if (descriere.exists()) {
-                    File create_folder_for_price_and_description = new File("D:\\new\\" + folderName + x);
+                    File create_folder_for_price_and_description = new File("D:\\dievs_code\\new_photos\\" + folderName + x);
                     if (!create_folder_for_price_and_description.exists()) {
                         create_folder_for_price_and_description.mkdir();
                         System.out.println("S-a creat Folder nou cu [ " + folderName + " ]");
@@ -56,7 +56,7 @@ public class havos extends links {
                     String imageUrl = curentElement.getAttribute("src");
                     URL url2 = new URL(imageUrl);
                     BufferedInputStream in = new BufferedInputStream(url2.openStream());
-                    String imagePath = "D:\\new\\" + folderName + x + "\\" + count + ".jpg";
+                    String imagePath = "D:\\dievs_code\\new_photos\\" + folderName + x + "\\" + count + ".jpg";
                     FileOutputStream fileOutputStream = new FileOutputStream(imagePath);
                     Thread.sleep(500);
                     byte[] dataBuffer = new byte[1024];

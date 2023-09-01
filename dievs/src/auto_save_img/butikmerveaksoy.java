@@ -12,25 +12,17 @@ import java.util.Scanner;
 
 public class butikmerveaksoy extends links {
 //    public static WebDriver driver = new ChromeDriver();
-static WebDriver driver;
-     static WebDriverWait wait;
+//static WebDriver driver;
+//     static WebDriverWait wait;
     static   String  folderName ="poze";
     public static void main(String[] args) throws IOException, InterruptedException {
 
      download_img();
-//        link("https://www.butikmerveaksoy.com/orgu-detayli-askili-keten-elbise-4680");
-//        link("https://www.butikmerveaksoy.com/askili-firca-desenli-elbise-4669");
-//        link("https://www.butikmerveaksoy.com/dantelli-oversize-gomlek");
-//        link("https://www.butikmerveaksoy.com/adel-keten-dokulu-pantolon-bluz-takim-ekru");
-//
-//        for (int i = 0; i < link.size(); i++) {
-//            download_img(link.get(i));
-//        }
     }
     static int x=1;
       static void download_img() throws InterruptedException, IOException {
 
-                  String file_descriere = "D:\\" + "link" + ".txt";
+                  String file_descriere = "D:\\dievs_code\\" + "link" + ".txt";
                   File descriere = new File(file_descriere);
 
                   if (descriere.exists()) {
@@ -46,7 +38,7 @@ static WebDriver driver;
                               Thread.sleep(1000);
                               WebElement nr_total_de_poze_gasite = driver.findElement(By.xpath("//div/span[@id='lg-counter-all']"));
                               int numarTotalPoze = Integer.parseInt(nr_total_de_poze_gasite.getText());
-                              File create_folder_for_price_and_description = new File("D:\\new\\" + folderName + x);
+                              File create_folder_for_price_and_description = new File("D:\\dievs_code\\new_photos\\" + folderName + x);
                               if (!create_folder_for_price_and_description.exists()) {
                                   create_folder_for_price_and_description.mkdir();
                                   System.out.println("S-a creat Folder nou cu [ " + folderName + " ]");
@@ -57,7 +49,7 @@ static WebDriver driver;
                                   String imageUrl = imageElement.getAttribute("src");
                                   URL url2 = new URL(imageUrl);
                                   BufferedInputStream in = new BufferedInputStream(url2.openStream());
-                                  String imagePath = "D:\\new\\" + folderName + x + "\\" + i + ".jpg";
+                                  String imagePath = "D:\\dievs_code\\new_photos\\" + folderName + x + "\\" + i + ".jpg";
                                   FileOutputStream fileOutputStream = new FileOutputStream(imagePath);
                                   Thread.sleep(500);
                                   byte[] dataBuffer = new byte[1024];
