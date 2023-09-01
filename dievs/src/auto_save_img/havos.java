@@ -31,7 +31,10 @@ public class havos extends links {
                     File create_folder_for_price_and_description = new File("D:\\dievs_code\\new_photos\\" + folderName + x);
                     if (!create_folder_for_price_and_description.exists()) {
                         create_folder_for_price_and_description.mkdir();
-                        System.out.println("S-a creat Folder nou cu [ " + folderName + " ]");
+                        System.out.println("S-a creat Folder nou cu [ " + folderName + x+" ]");
+                    }
+                    else {
+                        System.out.println("Folderul "+folderName+x+" era deja creat.");
                     }
                 } else {
                     System.out.println("Fișierul " + file_descriere + " nu există. Trecând la următorul fișier.");
@@ -76,6 +79,7 @@ public class havos extends links {
             e.printStackTrace();
         } finally {
             driver.quit(); // Închide driver-ul la sfârșitul buclei.
+            System.out.println("\nTotul s-a salvat cu succes!!");
         }
     }
 }
