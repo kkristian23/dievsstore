@@ -21,6 +21,8 @@ public class havos extends links {
     public static void main(String[] args) throws IOException, InterruptedException {
         int x = 1;
         String file_descriere = "D:\\dievs_code\\" + "link" + ".txt";
+        File create_folder_for_new_photos = new File("D:\\dievs_code\\new_photos\\");
+
         File descriere = new File(file_descriere);
         driver = new ChromeDriver();
         Actions actions = new Actions(driver);
@@ -28,6 +30,16 @@ public class havos extends links {
             Scanner myReader = new Scanner(descriere);
             while (myReader.hasNextLine()) {
                 if (descriere.exists()) {
+                    //                              =======================================
+//                              Create new photo Folder
+                    if (!create_folder_for_new_photos.exists()) {
+                        create_folder_for_new_photos.mkdir();
+                        System.out.println("S-a creat Folder nou cu New_photos");
+                    } else {
+                        System.out.println("Folderul new_photos era deja creat.");
+                    }
+//                              END
+//                              =====================================
                     File create_folder_for_price_and_description = new File("D:\\dievs_code\\new_photos\\" + folderName + x);
                     if (!create_folder_for_price_and_description.exists()) {
                         create_folder_for_price_and_description.mkdir();
@@ -39,6 +51,7 @@ public class havos extends links {
                 } else {
                     System.out.println("Fișierul " + file_descriere + " nu există. Trecând la următorul fișier.");
                 }
+
                 String data = myReader.nextLine();
                 driver.get(data);
                 driver.switchTo().window(driver.getWindowHandles().toArray()[0].toString());

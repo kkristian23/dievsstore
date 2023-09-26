@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d0685dd-bc15-43d0-89ac-a3a6d0d6aff1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/dievs/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dievs/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dievs/TestingAUtomation.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dievs/src/auto_save_img/butikmerveaksoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/dievs/src/auto_save_img/butikmerveaksoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dievs/src/auto_save_img/havos.java" beforeDir="false" afterPath="$PROJECT_DIR$/dievs/src/auto_save_img/havos.java" afterDir="false" />
-    </list>
+    <list default="true" id="0d0685dd-bc15-43d0-89ac-a3a6d0d6aff1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +29,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/dievs_code",
+    "last_opened_file_path": "D:/dievs_code/dievs",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
